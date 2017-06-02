@@ -143,27 +143,21 @@ $ hexo generate
   
     
 
-    <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="_posts/hello-world.md" data-title="Hello World" data-url="http://sean810720.github.io/2017/06/02/hello-world/"></div>
-    <!-- 多说评论框 end -->
-    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-      <script type="text/javascript">
-      var duoshuoQuery = {short_name:"wayouliu"};
-      (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0] 
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
-      })();
-      </script>
-    <!-- 多说公共JS代码 end -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.9&appId=403264403211176";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="fb-comments" data-href="http://sean810720.github.io/2017/06/02/hello-world/" data-numposts="5"></div>
 
   
 
 
 </div>
+
 
     </div>
     
@@ -173,7 +167,6 @@ $ hexo generate
             </div>
         </div>
         <footer class="footer">
-    <p>由<a href="http://hexo.io/" target="_blank">Hexo</a>强力驱动，搭载<a href="https://github.com/wayou/hexo-theme-gstyle">gstyle</a>主题</p>
     <p>
         &copy; 2017 Sean Chen
     </p>
